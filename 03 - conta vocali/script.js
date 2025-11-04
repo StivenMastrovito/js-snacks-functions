@@ -7,12 +7,14 @@ const word = 'javascript';
 // Dichiara la funzione qui.
 function vocali(word){
     let conta = 0;
+    const vocali = [];
     for(let i = 0; i < word.length; i++){
         if((word[i] === "a") || (word[i] === "A") || (word[i] === "e") || (word[i] === "E") || (word[i] === "i") || (word[i] === "I") || (word[i] === "o") || (word[i] === "O") || (word[i] === "U") || (word[i] === "u")){
             conta++;
+            vocali.push(word[i]);
         }
     }
-    return conta;
+    return conta + " " + vocali;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
